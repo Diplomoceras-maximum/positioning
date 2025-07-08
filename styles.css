@@ -1,0 +1,21 @@
+/* === Positioning === */
+
+/* Static and Relative Positioning
+
+    1. static is the default positioning that follows the flow of the HTML document, it is unaffected by top, right, bottom, and left CSS properties
+    2. relative is identical to static in positioning, however it can be affected with top, right, bottom, and left CSS properties
+    3. When "position: relative" is applied the element is now outside the normal document flow and will not affect the elements around it
+    4. relative is rarely used for position as a result of not affecting things around it
+
+*/
+
+.child,
+.parent {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#child-1 {
+  position: relative;
+  top: 30px;
+}
