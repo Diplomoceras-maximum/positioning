@@ -19,3 +19,22 @@
   position: relative;
   top: 30px;
 }
+
+/* Absolute Positioning
+
+    1. relative positioning allows you to position something at an exact point on the screen without disturbing any other element
+    2. "position: absolute" is affected by the top, right, bottom, and left CSS properties
+    3. Examples of use cases include: modals, image with captions on it, and icons on top of other elements
+    4. For an absolute positioned element to stay inside another, the parent must have position relative
+
+*/
+
+#parent-two {
+  position: relative;
+}
+
+#child-4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
