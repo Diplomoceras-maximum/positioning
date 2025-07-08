@@ -1,3 +1,7 @@
+body {
+  height: 1000px;
+}
+
 /* === Positioning === */
 
 /* Static and Relative Positioning
@@ -25,7 +29,7 @@
     1. relative positioning allows you to position something at an exact point on the screen without disturbing any other element
     2. "position: absolute" is affected by the top, right, bottom, and left CSS properties
     3. Examples of use cases include: modals, image with captions on it, and icons on top of other elements
-    4. For an absolute positioned element to stay inside another, the parent must have position relative
+    4. For an absolute positioned element to stay inside another, the parent must have position relative or anything other than static
 
 */
 
@@ -37,4 +41,17 @@
   position: absolute;
   top: 0;
   right: 0;
+}
+
+/* Fixed Positioning
+
+    1. fixed position elements are removed from the normal flow of the document
+    2. "position: fixed" elements are positioned relative to the viewport
+    3. Using the properties of top, right, bottom, and left, the element will stay fixed to its place when the user scrolls
+    4. This is most useful for navigation bars and floating menus/chat buttons
+
+*/
+
+#child-7 {
+  position: fixed;
 }
