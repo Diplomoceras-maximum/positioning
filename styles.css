@@ -1,5 +1,5 @@
 body {
-  height: 1000px;
+  height: 3000px;
 }
 
 /* === Positioning === */
@@ -54,4 +54,21 @@ body {
 
 #child-7 {
   position: fixed;
+}
+
+/* Sticky Positioning
+
+    1. sticky position will act like normal elements until they are scrolled past, then they behave like fixed elements
+    2. "position: sticky" elements are also not taken out of the normal flow of the document
+    3. This can be useful for section headings to always see what section or category you are in while scrolling down
+
+*/
+
+#parent-four {
+  height: 500px;
+}
+
+#child-10 {
+  position: sticky;
+  top: 0;
 }
